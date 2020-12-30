@@ -1,0 +1,10 @@
+<script>
+
+    let str = "Каждый охотник желает знать, где сидит фазан."; 
+    let result = str.split('').filter(
+        function(char, i, arr){
+            return (i === 0 || arr[i-1] === ' ') && char
+        })
+    console.log(result)
+
+</script>
